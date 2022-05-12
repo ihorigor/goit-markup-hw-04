@@ -1,0 +1,345 @@
+/* color: #212121;=> цвет заголовков
+color: #757575;=> основной текст 
+color: #FFFFFF;=> секция герой, футер лого и ссылка на локальный адрес
+color: rgba(255, 255, 255, 0.6); => футер ссылки 
+color: #2196F3=> состояние :hover и :focus
+( часть лого Web)
+background: #2196F3; Интарктивные части 
+color: #188ce8; 
+
+
+*/
+:root {
+	--primary-text-color: #757575;
+	--title-text-color: #212121;
+	--accent-color: #2196f3;
+	--primary-white-color: #ffffff;
+	--primary-bg-color: #f5f4fa;
+	--bgc-color-section: #2f303a;
+	--background-color-primary: #e5e5e5;
+	--logo-color: #000000;
+	--text-color-a-canal: rgba(255, 255, 255, 0.6);
+	--card-set-gap: 30px;
+}
+body {
+	color: var(--primary-text-color);
+	background-color: var(--primary-white-color);
+	font-family: Roboto, sans-serif;
+	letter-spacing: 0.03em;
+	font-size: 14px;
+	line-height: 1.71;
+	font-weight: 400;
+}
+h1,
+h2,
+h3,
+p {
+	margin: 0;
+	padding: 0;
+}
+ol,
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.section {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+/* header */
+.header {
+	border-bottom: 1px solid #ececec;
+}
+.container.flex {
+	display: flex;
+	align-items: center;
+}
+/* логотип */
+.logo {
+	display: flex;
+	align-items: center;
+	margin-right: 93px;
+	color: var(--accent-color);
+	font-family: Raleway, sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.2;
+	text-decoration: none;
+}
+.logo-text {
+	color: var(--logo-color);
+}
+
+/* site-nav */
+.list.flex {
+	display: flex;
+}
+.site-nav.list {
+	display: flex;
+}
+.list .item:not(:last-child) {
+	margin-right: 50px;
+}
+.site-nav .link {
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
+	color: var(--title-text-color);
+
+	font-weight: 500;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+	color: var(--accent-color);
+}
+.site-nav .link.current {
+	color: var(--accent-color);
+}
+/* телефон эмейл */
+
+.auth-nav {
+	margin-left: auto;
+}
+.auth-nav .link {
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	color: var(--primary-text-color);
+
+	font-weight: 500;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+}
+.auth-nav .link:hover,
+.auth-nav .link:focus,
+.auth-nav .link .footer-text:hover,
+.auth-nav .link .footer-text:focus {
+	color: var(--accent-color);
+}
+/* Заголовки */
+.section-title {
+	color: var(--title-text-color);
+}
+.section-title.primary {
+	margin-bottom: 50px;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+}
+
+/* Hero */
+.hero-title {
+	max-width: 650px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+
+	color: var(--primary-white-color);
+
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	text-transform: uppercase;
+
+	letter-spacing: 0.06em;
+}
+.hero {
+	padding: 200px 0;
+	background-color: var(--bgc-color-section);
+	text-align: center;
+}
+/* benefits преймушества  */
+.list.benefits-flex {
+	flex-wrap: wrap;
+	display: flex;
+}
+.section-title.benefits {
+	margin-bottom: 10px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+}
+.item-f {
+	width: 270px;
+	margin-right: 30px;
+}
+.item-f:last-child {
+	margin-right: 0;
+}
+/* team */
+.section-title.team {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.18;
+}
+.img {
+	display: block;
+}
+.team-text {
+	font-size: 16px;
+	line-height: 1.2;
+}
+.team-card {
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+/* work */
+.section.work {
+	padding-top: 0;
+}
+.item-work {
+	margin-right: 30px;
+}
+.list.flex .item-work:last-child {
+	margin-right: 0;
+}
+/* КНОПКИ button */
+.hero .button {
+	padding: 10px 32px;
+	background-color: var(--accent-color);
+	color: var(--primary-white-color);
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	min-width: 200px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.hero .button:hover,
+.hero .button:focus {
+	background-color: #188ce8;
+}
+.button {
+	display: inline-block;
+	padding: 6px 22px;
+	background: var(--primary-bg-color);
+	color: var(--title-text-color);
+	font-family: 'Roboto';
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.62;
+	letter-spacing: 0.03em;
+	text-decoration: none;
+	cursor: pointer;
+	border-radius: 4px;
+}
+.button:hover,
+.button:focus {
+	background-color: var(--accent-color);
+	color: var(--primary-white-color);
+}
+.button.current {
+	background-color: var(--accent-color);
+	color: var(--primary-white-color);
+}
+.button-flex .button {
+	margin-right: 8px;
+	border: none;
+}
+/* FUTER */
+/* физический адрес */
+.link-gm {
+	color: var(--primary-white-color);
+	margin-bottom: 9px;
+	font-style: normal;
+	text-decoration: none;
+}
+.footer .container .logo {
+	margin-bottom: 20px;
+}
+.footer {
+	background-color: var(--bgc-color-section);
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.footer .container .auth-nav {
+	display: block;
+}
+.footer .logo-text {
+	color: var(--primary-white-color);
+}
+.footer-link {
+	color: var(--text-color-a-canal);
+
+	font-style: normal;
+	font-weight: 400;
+	text-decoration: none;
+}
+.footer-link.margin {
+	margin-bottom: 9px;
+}
+/* картинки фон */
+.item-img {
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+		0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+
+	margin-right: 30px;
+	background-color: var(--primary-white-color);
+	text-align: center;
+}
+.list.flex .item-img:last-child {
+	margin-right: 0;
+}
+.section.team {
+	background: var(--primary-bg-color);
+}
+/* portfolio */
+.section-title.portfolio {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+}
+.portfolio-text {
+	color: var(--primary-text-color);
+	font-size: 16px;
+	line-height: 1.88;
+}
+.link-portfolio {
+	text-decoration: none;
+	display: block;
+}
+.list.portfolio-flex {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+.list.portfolio-list {
+	justify-content: center;
+	display: flex;
+}
+.card-content {
+	padding-left: 24px;
+	padding-right: 24px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border: 1px solid #eeeeee;
+}
+.img-portfolio {
+	display: block;
+}
+.list-img {
+	margin-right: 30px;
+	margin-bottom: 30px;
+}
+.list.portfolio-flex .list-img:nth-child(3n + 3) {
+	margin-right: 0px;
+}
+.list.portfolio-flex .list-img:nth-child(n + 6) {
+	margin-bottom: 0px;
+}
