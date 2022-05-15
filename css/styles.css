@@ -111,8 +111,8 @@ ul {
 /* телефон эмейл */
 .icon-mail {
 	display: block;
-	fill: #afb1b8;
-	height: 12px;
+	fill: currentcolor; 
+	height: 16px;
 	width: 16px;
 	justify-content: center;
 	margin-right: 10px;
@@ -120,7 +120,7 @@ ul {
 
 .icon-tel {
 	display: block;
-	fill: #afb1b8;
+	fill: currentColor;
 	height: 16px;
 	width: 10px;
 	justify-content: center;
@@ -204,8 +204,8 @@ ul {
 		),
 		url(../images/backgroundImg.jpg);
 
-	height: 600px;
-	width: 1600px;
+	
+	max-width: 1600px;
 }
 /* benefits преймушества  */
 .list.benefits-flex {
@@ -265,15 +265,23 @@ ul {
 	display: flex;
 	justify-content: center;
 }
-
 .soc-list .soc-item + .soc-item {
 	margin-left: 10px;
 }
 
-.soc-link {
-	display: block;
-	padding: 12px;
+.soc-item{
+	display: flex;
 	border-radius: 50%;
+}
+
+.soc-link {
+	display: flex;
+	color: var(--primary-text-color);
+		width: 44px;
+	height: 44px;
+	justify-content: center;
+	align-items: center;
+	
 }
 
 .soc-list .soc-icon {
@@ -281,20 +289,19 @@ ul {
 	width: 20px;
 	height: 20px;
 
-	fill: #afb1b8;
+	fill: currentColor;
 }
-
-.soc-link:hover .soc-icon,
-.soc-link:focus .soc-icon {
-	background-color: var(--accent-color);
-	fill: var(--primary-white-color);
-}
-
 .soc-link:hover,
-.soc-link:focus {
-	background-color: var(--accent-color);
-}
+.soc-link:focus{
+	color: var(--primary-white-color);
 
+}
+.soc-item:hover,
+.soc-item:focus{
+		background-color:var(--accent-color);
+			
+
+}
 /* work */
 .section.work {
 	padding-top: 0;
@@ -506,7 +513,8 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 	margin-bottom: 0px;
 }
 .follow .soc-link{
-	background-color: rgba(255, 255, 255, 0.1);;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 50%;
 }
 .follow .soc-link:hover,
 .follow .soc-link:focus
